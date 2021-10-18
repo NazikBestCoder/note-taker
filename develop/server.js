@@ -29,6 +29,13 @@ app.post("/api/notes", (req, res) => {
     fs.writeFileSync("./db/db.json", JSON.stringify(notes))
     res.json(notes);
 });
+// Deletes notes
+app.delete("/api/notes/:id", (req, res) => {
+    const notes = JSON.parse(fs.readFyleSync("./db/db.json"));
+    const delNote = notes.filter((rmvNote) =>rmvNote.id !== req.params.id);
+    fs.writeFileSync("./db/db/json", JSON.stringify(delNote));
+    res.json(delNote);
+})
 app.listen(PORT, () => {
     console.log(`listening on ${PORT}`)
 });
