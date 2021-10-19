@@ -12,6 +12,7 @@ This app allows users to take notes and delete them.
 - [Questions](#questions)
 ## Installation
 Heroku deployed link:  https://quiet-castle-65643.herokuapp.com/
+Github Repo: https://github.com/NazikBestCoder/note-taker.git
 ## Usage
 Type in the note text and the title of the note, in the upper right corner press save buuton, press trash can button on the left to delete the note.
 ## License
