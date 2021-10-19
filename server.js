@@ -7,12 +7,13 @@ const uuid = require("uuid");
 const app = express();
 const PORT = process.env.PORT || 4000;
 
-// const htmlRoutes = require("./routes/htmlR.js");
+// const htmlRoutes = require("./routes/htmlR.js");-not needed
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
-// app.use("/", htmlRoutes);
+// app.use("/", htmlRoutes);-not needed
+
 // Connect API Routes
 // Saves notesinto db.json
 app.get("/api/notes", (req, res) => {
@@ -46,17 +47,4 @@ app.listen(PORT, () => {
   console.log(`listening on ${PORT}`);
 });
 
-// const express = require("express");
-// const app = express();
-// const PORT = process.env.PORT || 3000;
 
-// const htmlRoutes = require("./routes/htmlR.js");
-
-// app.use(express.json());
-// app.use(express.urlencoded({ extended: true }));
-// app.use(express.static('public'));
-// app.use("/", htmlRoutes);
-
-// app.listen(PORT, () => {
-//     console.log(`listening on ${PORT}`)
-// });

@@ -2,7 +2,7 @@
 
 [MIT license badge](https://img.shields.io/badge/license-MIT-brightgreen)
 ## Description
-
+This app allows users to take notes and delete them.
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
@@ -11,9 +11,9 @@
 - [Tests](#tests)
 - [Questions](#questions)
 ## Installation
--
+Heroku deployed link:  https://quiet-castle-65643.herokuapp.com/
 ## Usage
--
+Type in the note text and the title of the note, in the upper right corner press save buuton, press trash can button on the left to delete the note.
 ## License
 MIT License
 
